@@ -38,11 +38,11 @@ const ExampleNavbar: FC = function () {
             <Navbar.Brand href="/">
               <img
                 alt=""
-                src="https://flowbite.com/docs/images/logo.svg"
+                src="https://flowbite-pro-react-admin-dashboard-main.vercel.app/images/TradeLoopc.png"
                 className="mr-3 h-6 sm:h-8"
               />
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-                Flowbite
+
               </span>
             </Navbar.Brand>
           </div>
