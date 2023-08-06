@@ -7,7 +7,6 @@ import {
   HiAdjustments,
   HiChartPie,
   HiChartSquareBar,
-  HiClipboard,
   HiCog,
   HiCollection,
   HiInboxIn,
@@ -16,6 +15,7 @@ import {
   HiSearch,
   HiShoppingBag,
   HiUsers,
+  HiUser,
   HiViewGrid,
 } from "react-icons/hi";
 
@@ -206,15 +206,15 @@ const ExampleSidebar: FC = function () {
               <Sidebar.ItemGroup>
                 <Sidebar.Item
                   href="https://github.com/themesberg/flowbite-react/"
-                  icon={HiClipboard}
+                  icon={HiUser}
                 >
-                  Docs
+                  Account
                 </Sidebar.Item>
                 <Sidebar.Item
                   href="https://flowbite-react.com/"
                   icon={HiCollection}
                 >
-                  Components
+                  API Manager
                 </Sidebar.Item>
                 <Sidebar.Item
                   href="https://github.com/themesberg/flowbite-react/issues"
