@@ -36,11 +36,13 @@ const ExampleNavbar: FC = function () {
               </button>
             )}
             <Navbar.Brand href="/">
-              <img
-                  alt=""
-                  src="public/images/TradeLoopf.png"
-                  className="mr-3 h-6 sm:h-8"
-              />
+              <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
+                <img
+                    alt=""
+                    src="public/images/TradeLoopf.png"
+                    className="mr-3 h-6 sm:h-8"
+                />
+              </span>
             </Navbar.Brand>
 
           </div>
