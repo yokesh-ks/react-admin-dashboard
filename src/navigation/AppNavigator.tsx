@@ -1,31 +1,31 @@
 import type { FC } from "react";
 import { Routes, Route } from "react-router";
 import { BrowserRouter } from "react-router-dom";
-import DashboardPage from "./pages";
-import ForgotPasswordPage from "./pages/authentication/forgot-password";
-import ProfileLockPage from "./pages/authentication/profile-lock";
-import ResetPasswordPage from "./pages/authentication/reset-password";
-import SignInPage from "./pages/authentication/sign-in";
-import SignUpPage from "./pages/authentication/sign-up";
-import EcommerceBillingPage from "./pages/e-commerce/billing";
-import EcommerceInvoicePage from "./pages/e-commerce/invoice";
-import EcommerceProductsPage from "./pages/e-commerce/products";
-import KanbanPage from "./pages/kanban";
-import MailingComposePage from "./pages/mailing/compose";
-import MailingInboxPage from "./pages/mailing/inbox";
-import MailingReadPage from "./pages/mailing/read";
-import MailingReplyPage from "./pages/mailing/reply";
-import NotFoundPage from "./pages/pages/404";
-import ServerErrorPage from "./pages/pages/500";
-import MaintenancePage from "./pages/pages/maintenance";
-import PricingPage from "./pages/pages/pricing";
-import UserFeedPage from "./pages/users/feed";
-import UserListPage from "./pages/users/list";
-import UserProfilePage from "./pages/users/profile";
-import UserSettingsPage from "./pages/users/settings";
-import FlowbiteWrapper from "./components/flowbite-wrapper";
+import DashboardPage from "../pages";
+import ForgotPasswordPage from "../pages/authentication/forgot-password";
+import ProfileLockPage from "../pages/authentication/profile-lock";
+import ResetPasswordPage from "../pages/authentication/reset-password";
+import SignInPage from "../pages/authentication/sign-in";
+import SignUpPage from "../pages/authentication/sign-up";
+import EcommerceBillingPage from "../pages/e-commerce/billing";
+import EcommerceInvoicePage from "../pages/e-commerce/invoice";
+import EcommerceProductsPage from "../pages/e-commerce/products";
+import KanbanPage from "../pages/kanban";
+import MailingComposePage from "../pages/mailing/compose";
+import MailingInboxPage from "../pages/mailing/inbox";
+import MailingReadPage from "../pages/mailing/read";
+import MailingReplyPage from "../pages/mailing/reply";
+import NotFoundPage from "../pages/pages/404";
+import ServerErrorPage from "../pages/pages/500";
+import MaintenancePage from "../pages/pages/maintenance";
+import PricingPage from "../pages/pages/pricing";
+import UserFeedPage from "../pages/users/feed";
+import UserListPage from "../pages/users/list";
+import UserProfilePage from "../pages/users/profile";
+import UserSettingsPage from "../pages/users/settings";
+import FlowbiteWrapper from "../components/flowbite-wrapper";
 
-const App: FC = function () {
+const AppNavigator: FC = function () {
   return (
     <BrowserRouter>
       <Routes>
@@ -76,4 +76,4 @@ const App: FC = function () {
   );
 };
 
-export default App;
+export default AppNavigator;
