@@ -6,6 +6,8 @@
 
 Welcome to the React Admin Dashboard repository! This project provides a collection of pre-designed UI components and templates aimed at accelerating the development of web applications and admin dashboards. Utilizing React, Tailwind CSS, and Flowbite, this admin dashboard layout showcases a variety of essential features like charts, kanban boards, and mailing systems
 
+<img width="1438" alt="image" src="https://github.com/yokesh-ks/react-admin-dashboard/assets/67595548/189670d6-803b-423a-afea-d67b36c542f6">
+
 ## Project Features
 
 - Modern and intuitive UI components
