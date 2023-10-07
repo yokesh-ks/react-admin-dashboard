@@ -10,19 +10,7 @@ import {
 } from "flowbite-react";
 import type { FC } from "react";
 import { useState } from "react";
-import {
-  HiChevronLeft,
-  HiChevronRight,
-  HiCog,
-  HiDocumentDownload,
-  HiDotsVertical,
-  HiExclamationCircle,
-  HiHome,
-  HiOutlineExclamationCircle,
-  HiOutlinePencilAlt,
-  HiPlus,
-  HiTrash,
-} from "react-icons/hi";
+import Icon from "../../icons";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
 
 const UserListPage: FC = function () {
@@ -34,7 +22,7 @@ const UserListPage: FC = function () {
             <Breadcrumb className="mb-4">
               <Breadcrumb.Item href="#">
                 <div className="flex items-center gap-x-3">
-                  <HiHome className="text-xl" />
+                  <Icon name="HiHome" className="text-xl" />
                   <span className="dark:text-white">Home</span>
                 </div>
               </Breadcrumb.Item>
@@ -65,28 +53,28 @@ const UserListPage: FC = function () {
                   className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   <span className="sr-only">Configure</span>
-                  <HiCog className="text-2xl" />
+                  <Icon name="HiCog" className="text-2xl" />
                 </a>
                 <a
                   href="#"
                   className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   <span className="sr-only">Delete</span>
-                  <HiTrash className="text-2xl" />
+                  <Icon name="HiTrash" className="text-2xl" />
                 </a>
                 <a
                   href="#"
                   className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   <span className="sr-only">Purge</span>
-                  <HiExclamationCircle className="text-2xl" />
+                  <Icon name="HiExclamationCircle" className="text-2xl" />
                 </a>
                 <a
                   href="#"
                   className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   <span className="sr-only">Settings</span>
-                  <HiDotsVertical className="text-2xl" />
+                  <Icon name="HiDotsVertical" className="text-2xl" />
                 </a>
               </div>
             </div>
@@ -94,7 +82,7 @@ const UserListPage: FC = function () {
               <AddUserModal />
               <Button color="gray">
                 <div className="flex items-center gap-x-3">
-                  <HiDocumentDownload className="text-xl" />
+                  <Icon name="HiDocumentDownload" className="text-xl" />
                   <span>Export</span>
                 </div>
               </Button>
@@ -123,7 +111,7 @@ const AddUserModal: FC = function () {
     <>
       <Button color="primary" onClick={() => setOpen(true)}>
         <div className="flex items-center gap-x-3">
-          <HiPlus className="text-xl" />
+          <Icon name="HiPlus" className="text-xl" />
           Add user
         </div>
       </Button>
@@ -1189,7 +1177,7 @@ const EditUserModal: FC = function () {
     <>
       <Button color="primary" onClick={() => setOpen(true)}>
         <div className="flex items-center gap-x-2">
-          <HiOutlinePencilAlt className="text-lg" />
+          <Icon name="HiOutlinePencilAlt" className="text-lg" />
           Edit user
         </div>
       </Button>
@@ -1298,7 +1286,7 @@ const DeleteUserModal: FC = function () {
     <>
       <Button color="failure" onClick={() => setOpen(true)}>
         <div className="flex items-center gap-x-2">
-          <HiTrash className="text-lg" />
+          <Icon name="HiTrash" className="text-lg" />
           Delete user
         </div>
       </Button>
@@ -1308,7 +1296,10 @@ const DeleteUserModal: FC = function () {
         </Modal.Header>
         <Modal.Body className="px-6 pb-6 pt-0">
           <div className="flex flex-col items-center gap-y-6 text-center">
-            <HiOutlineExclamationCircle className="text-7xl text-red-500" />
+            <Icon
+              name="HiOutlineExclamationCircle"
+              className="text-7xl text-red-500"
+            />
             <p className="text-xl text-gray-500">
               Are you sure you want to delete this user?
             </p>
@@ -1336,14 +1327,14 @@ export const Pagination: FC = function () {
           className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
         >
           <span className="sr-only">Previous page</span>
-          <HiChevronLeft className="text-2xl" />
+          <Icon name="HiChevronLeft" className="text-2xl" />
         </a>
         <a
           href="#"
           className="mr-2 inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
         >
           <span className="sr-only">Next page</span>
-          <HiChevronRight className="text-2xl" />
+          <Icon name="HiChevronRight" className="text-2xl" />
         </a>
         <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
           Showing&nbsp;
@@ -1361,7 +1352,7 @@ export const Pagination: FC = function () {
           href="#"
           className="inline-flex flex-1 items-center justify-center rounded-lg bg-primary-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
         >
-          <HiChevronLeft className="mr-1 text-base" />
+          <Icon name="HiChevronLeft" className="mr-1 text-base" />
           Previous
         </a>
         <a
@@ -1369,7 +1360,7 @@ export const Pagination: FC = function () {
           className="inline-flex flex-1 items-center justify-center rounded-lg bg-primary-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
         >
           Next
-          <HiChevronRight className="ml-1 text-base" />
+          <Icon name="HiChevronRight" className="ml-1 text-base" />
         </a>
       </div>
     </div>

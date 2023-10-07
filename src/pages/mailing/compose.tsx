@@ -1,18 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button, Label, Textarea, TextInput } from "flowbite-react";
 import type { FC } from "react";
-import { FaSmile } from "react-icons/fa";
-import {
-  HiArrowLeft,
-  HiArrowRight,
-  HiChevronLeft,
-  HiChevronRight,
-  HiPaperClip,
-  HiPhotograph,
-  HiPrinter,
-  HiTrash,
-} from "react-icons/hi";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
+import Icon from "../../icons";
 
 const MailingComposePage: FC = function () {
   return (
@@ -25,7 +15,7 @@ const MailingComposePage: FC = function () {
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <span className="sr-only">Go back</span>
-              <HiArrowLeft className="text-2xl" />
+              <Icon name="HiArrowLeft" className="text-2xl" />
             </a>
           </div>
           <div className="flex space-x-2 pl-4 text-gray-500">New Message</div>
@@ -37,7 +27,7 @@ const MailingComposePage: FC = function () {
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <span className="sr-only">Delete</span>
-              <HiTrash className="text-2xl" />
+              <Icon name="HiTrash" className="text-2xl" />
             </a>
           </div>
           <div className="pl-2">
@@ -46,14 +36,14 @@ const MailingComposePage: FC = function () {
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <span className="sr-only">Previous</span>
-              <HiChevronLeft className="text-3xl" />
+              <Icon name="HiChevronLeft" className="text-3xl" />
             </a>
             <a
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <span className="sr-only">Next</span>
-              <HiChevronRight className="text-3xl" />
+              <Icon name="HiChevronRight" className="text-3xl" />
             </a>
           </div>
         </div>
@@ -92,7 +82,7 @@ const MailingComposePage: FC = function () {
           <div className="mb-3 space-y-3 sm:mb-0 sm:flex sm:space-y-0">
             <Button color="primary" type="submit">
               <div className="flex items-center gap-x-2">
-                Send <HiArrowRight className="text-lg" />
+                Send <Icon name="HiArrowRight" className="text-lg" />
               </div>
             </Button>
           </div>
@@ -102,28 +92,28 @@ const MailingComposePage: FC = function () {
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <span className="sr-only">Add emoji</span>
-              <FaSmile className="text-2xl" />
+              <Icon name="FaSmile" className="text-2xl" />
             </a>
             <a
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <span className="sr-only">Attach</span>
-              <HiPaperClip className="text-2xl" />
+              <Icon name="HiPaperClip" className="text-2xl" />
             </a>
             <a
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <span className="sr-only">Screenshot</span>
-              <HiPhotograph className="text-2xl" />
+              <Icon name="HiPhotograph" className="text-2xl" />
             </a>
             <a
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
               <span className="sr-only">Print</span>
-              <HiPrinter className="text-2xl" />
+              <Icon name="HiPrinter" className="text-2xl" />
             </a>
           </div>
         </div>

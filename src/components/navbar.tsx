@@ -1,17 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import type { FC } from "react";
-import {
-  Avatar,
-  DarkThemeToggle,
-  Dropdown,
-  Navbar,
-} from "flowbite-react";
-import {
-  HiMenuAlt1,
-  HiX,
-} from "react-icons/hi";
+import { DarkThemeToggle, Dropdown, Navbar } from "flowbite-react";
 import { useSidebarContext } from "../context/SidebarContext";
 import isSmallScreen from "../helpers/is-small-screen";
+import Icon from "../icons";
 
 const ExampleNavbar: FC = function () {
   const { isOpenOnSmallScreens, isPageWithSidebar, setOpenOnSmallScreens } =
@@ -29,20 +21,16 @@ const ExampleNavbar: FC = function () {
               >
                 <span className="sr-only">Toggle sidebar</span>
                 {isOpenOnSmallScreens && isSmallScreen() ? (
-                  <HiX className="h-6 w-6" />
+                  <Icon name="HiX" className="h-6 w-6" />
                 ) : (
-                  <HiMenuAlt1 className="h-6 w-6" />
+                  <Icon name="HiMenuAlt1" className="h-6 w-6" />
                 )}
               </button>
             )}
             <Navbar.Brand href="/">
-              <img
-                alt=""
-                src="https://flowbite-pro-react-admin-dashboard-main.vercel.app/images/TradeLoopc.png"
-                className="mr-3 h-6 sm:h-8"
-              />
+              <img alt="" src="/images/logo.png" className="mr-2 h-6 sm:h-8" />
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-
+                React Admin
               </span>
             </Navbar.Brand>
           </div>
@@ -68,12 +56,9 @@ const UserDropdown: FC = function () {
       label={
         <span>
           <span className="sr-only">User menu</span>
-          <Avatar
-            alt=""
-            img="../images/Legend.png"
-            rounded
-            size="sm"
-          />
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-50 dark:bg-gray-900">
+            <Icon name="ProfileIcon" />
+          </div>
         </span>
       }
     >

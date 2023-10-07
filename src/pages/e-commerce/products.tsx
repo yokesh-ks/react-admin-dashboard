@@ -11,19 +11,9 @@ import {
 } from "flowbite-react";
 import type { FC } from "react";
 import { useState } from "react";
-import { FaPlus } from "react-icons/fa";
-import {
-  HiCog,
-  HiDotsVertical,
-  HiExclamationCircle,
-  HiHome,
-  HiOutlineExclamationCircle,
-  HiPencilAlt,
-  HiTrash,
-  HiUpload,
-} from "react-icons/hi";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
 import { Pagination } from "../users/list";
+import Icon from "../../icons";
 
 const EcommerceProductsPage: FC = function () {
   return (
@@ -34,7 +24,7 @@ const EcommerceProductsPage: FC = function () {
             <Breadcrumb className="mb-4">
               <Breadcrumb.Item href="#">
                 <div className="flex items-center gap-x-3">
-                  <HiHome className="text-xl" />
+                  <Icon name="HiHome" className="text-xl" />
                   <span className="dark:text-white">Home</span>
                 </div>
               </Breadcrumb.Item>
@@ -55,28 +45,28 @@ const EcommerceProductsPage: FC = function () {
                 className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
               >
                 <span className="sr-only">Configure</span>
-                <HiCog className="text-2xl" />
+                <Icon name="HiCog" className="text-2xl" />
               </a>
               <a
                 href="#"
                 className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
               >
                 <span className="sr-only">Delete</span>
-                <HiTrash className="text-2xl" />
+                <Icon name="HiTrash" className="text-2xl" />
               </a>
               <a
                 href="#"
                 className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
               >
                 <span className="sr-only">Purge</span>
-                <HiExclamationCircle className="text-2xl" />
+                <Icon name="HiExclamationCircle" className="text-2xl" />
               </a>
               <a
                 href="#"
                 className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
               >
                 <span className="sr-only">Settings</span>
-                <HiDotsVertical className="text-2xl" />
+                <Icon name="HiDotsVertical" className="text-2xl" />
               </a>
             </div>
             <div className="flex w-full items-center sm:justify-end">
@@ -122,7 +112,7 @@ const AddProductModal: FC = function () {
   return (
     <>
       <Button color="primary" onClick={() => setOpen(!isOpen)}>
-        <FaPlus className="mr-3 text-sm" />
+        <Icon name="FaPlus" className="mr-3 text-sm" />
         Add product
       </Button>
       <Modal onClose={() => setOpen(false)} show={isOpen}>
@@ -183,7 +173,10 @@ const AddProductModal: FC = function () {
                 <div className="flex w-full items-center justify-center">
                   <label className="flex h-32 w-full cursor-pointer flex-col rounded border-2 border-dashed border-gray-300 hover:bg-gray-50 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-700">
                     <div className="flex flex-col items-center justify-center pb-6 pt-5">
-                      <HiUpload className="text-4xl text-gray-300" />
+                      <Icon
+                        name="HiUpload"
+                        className="text-4xl text-gray-300"
+                      />
                       <p className="py-1 text-sm text-gray-600 dark:text-gray-500">
                         Upload a file or drag and drop
                       </p>
@@ -214,7 +207,7 @@ const EditProductModal: FC = function () {
   return (
     <>
       <Button color="primary" onClick={() => setOpen(!isOpen)}>
-        <HiPencilAlt className="mr-2 text-lg" />
+        <Icon name="HiPencilAlt" className="mr-2 text-lg" />
         Edit item
       </Button>
       <Modal onClose={() => setOpen(false)} show={isOpen}>
@@ -280,7 +273,10 @@ const EditProductModal: FC = function () {
                   />
                   <a href="#" className="cursor-pointer">
                     <span className="sr-only">Delete</span>
-                    <HiTrash className="-mt-5 text-2xl text-red-600" />
+                    <Icon
+                      name="HiTrash"
+                      className="-mt-5 text-2xl text-red-600"
+                    />
                   </a>
                 </div>
                 <div>
@@ -291,7 +287,10 @@ const EditProductModal: FC = function () {
                   />
                   <a href="#" className="cursor-pointer">
                     <span className="sr-only">Delete</span>
-                    <HiTrash className="-mt-5 text-2xl text-red-600" />
+                    <Icon
+                      name="HiTrash"
+                      className="-mt-5 text-2xl text-red-600"
+                    />
                   </a>
                 </div>
                 <div>
@@ -302,7 +301,10 @@ const EditProductModal: FC = function () {
                   />
                   <a href="#" className="cursor-pointer">
                     <span className="sr-only">Delete</span>
-                    <HiTrash className="-mt-5 text-2xl text-red-600" />
+                    <Icon
+                      name="HiTrash"
+                      className="-mt-5 text-2xl text-red-600"
+                    />
                   </a>
                 </div>
               </div>
@@ -310,7 +312,10 @@ const EditProductModal: FC = function () {
                 <div className="flex w-full items-center justify-center">
                   <label className="flex h-32 w-full cursor-pointer flex-col rounded border-2 border-dashed border-gray-300 hover:bg-gray-50 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-700">
                     <div className="flex flex-col items-center justify-center pb-6 pt-5">
-                      <HiUpload className="text-4xl text-gray-300" />
+                      <Icon
+                        name="HiUpload"
+                        className="text-4xl text-gray-300"
+                      />
                       <p className="py-1 text-sm text-gray-600 dark:text-gray-500">
                         Upload a file or drag and drop
                       </p>
@@ -341,7 +346,7 @@ const DeleteProductModal: FC = function () {
   return (
     <>
       <Button color="failure" onClick={() => setOpen(!isOpen)}>
-        <HiTrash className="mr-2 text-lg" />
+        <Icon name="HiTrash" className="mr-2 text-lg" />
         Delete item
       </Button>
       <Modal onClose={() => setOpen(false)} show={isOpen} size="md">
@@ -350,7 +355,10 @@ const DeleteProductModal: FC = function () {
         </Modal.Header>
         <Modal.Body className="px-6 pb-6 pt-0">
           <div className="flex flex-col items-center gap-y-6 text-center">
-            <HiOutlineExclamationCircle className="text-7xl text-red-600" />
+            <Icon
+              name="HiOutlineExclamationCircle"
+              className="text-7xl text-red-600"
+            />
             <p className="text-lg text-gray-500 dark:text-gray-300">
               Are you sure you want to delete this product?
             </p>

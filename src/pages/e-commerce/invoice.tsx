@@ -1,14 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Breadcrumb, Label, Table, TextInput } from "flowbite-react";
 import type { FC } from "react";
-import {
-  HiCog,
-  HiDotsVertical,
-  HiDownload,
-  HiHome,
-  HiPrinter,
-} from "react-icons/hi";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
+import Icon from "../../icons";
 
 const EcommerceInvoicePage: FC = function () {
   return (
@@ -19,7 +13,7 @@ const EcommerceInvoicePage: FC = function () {
           <Breadcrumb className="mb-4">
             <Breadcrumb.Item href="#">
               <div className="flex items-center gap-x-3">
-                <HiHome className="text-xl" />
+                <Icon name="HiHome" className="text-xl" />
                 <span className="dark:text-white">Home</span>
               </div>
             </Breadcrumb.Item>
@@ -63,14 +57,14 @@ const Menu: FC = function () {
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Configure</span>
-            <HiCog className="text-2xl" />
+            <Icon name="HiCog" className="text-2xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Settings</span>
-            <HiDotsVertical className="text-2xl" />
+            <Icon name="HiDotsVertical" className="text-2xl" />
           </a>
         </div>
       </div>
@@ -80,7 +74,7 @@ const Menu: FC = function () {
             href="#"
             className="inline-flex w-full items-center justify-center gap-x-2 rounded-lg bg-primary-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 sm:w-auto"
           >
-            <HiDownload className="text-2xl" />
+            <Icon name="HiDownload" className="text-2xl" />
             Download Invoice
           </a>
         </div>
@@ -89,7 +83,7 @@ const Menu: FC = function () {
             href="#"
             className="inline-flex w-full items-center justify-center gap-x-2 rounded-lg border border-gray-300 bg-white px-3 py-2 text-center text-sm font-medium text-gray-900 hover:bg-gray-100 focus:ring-4 focus:ring-primary-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white sm:w-auto"
           >
-            <HiPrinter className="text-2xl" />
+            <Icon name="HiPrinter" className="text-2xl" />
             Print
           </a>
         </div>

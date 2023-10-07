@@ -10,13 +10,7 @@ import {
 } from "flowbite-react";
 import type { FC } from "react";
 import { useState } from "react";
-import { FaDribbble, FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
-import {
-  HiCloudUpload,
-  HiDesktopComputer,
-  HiDeviceMobile,
-  HiHome,
-} from "react-icons/hi";
+import Icon from "../../icons";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
 
 const UserSettingsPage: FC = function () {
@@ -28,7 +22,7 @@ const UserSettingsPage: FC = function () {
             <Breadcrumb className="mb-4">
               <Breadcrumb.Item href="#">
                 <div className="flex items-center gap-x-3">
-                  <HiHome className="text-xl" />
+                  <Icon name="HiHome" className="text-xl" />
                   <span className="dark:text-white">Home</span>
                 </div>
               </Breadcrumb.Item>
@@ -84,7 +78,7 @@ const UserProfileCard: FC = function () {
             href="#"
             className="inline-flex items-center rounded-lg bg-primary-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
           >
-            <HiCloudUpload className="mr-2" />
+            <Icon name="HiCloudUpload" className="mr-2" />
             Change picture
           </a>
         </div>
@@ -137,7 +131,7 @@ const SocialAccountsCard: FC = function () {
           <li className="py-4">
             <div className="flex items-center space-x-4">
               <div className="shrink-0">
-                <FaFacebookF className="text-xl dark:text-white" />
+                <Icon name="FaFacebookF" className="text-xl dark:text-white" />
               </div>
               <div className="min-w-0 flex-1">
                 <span className="block truncate text-base font-semibold text-gray-900 dark:text-white">
@@ -160,7 +154,7 @@ const SocialAccountsCard: FC = function () {
           <li className="py-4">
             <div className="flex items-center space-x-4">
               <div className="shrink-0">
-                <FaTwitter className="text-xl dark:text-white" />
+                <Icon name="FaTwitter" className="text-xl dark:text-white" />
               </div>
               <div className="min-w-0 flex-1">
                 <span className="block truncate text-base font-semibold text-gray-900 dark:text-white">
@@ -183,7 +177,7 @@ const SocialAccountsCard: FC = function () {
           <li className="py-4">
             <div className="flex items-center space-x-4">
               <div className="shrink-0">
-                <FaGithub className="text-xl dark:text-white" />
+                <Icon name="FaGithub" className="text-xl dark:text-white" />
               </div>
               <div className="min-w-0 flex-1">
                 <span className="block truncate text-base font-semibold text-gray-900 dark:text-white">
@@ -203,7 +197,7 @@ const SocialAccountsCard: FC = function () {
           <li className="pb-6 pt-4">
             <div className="flex items-center space-x-4">
               <div className="shrink-0">
-                <FaDribbble className="text-xl dark:text-white" />
+                <Icon name="FaDribbble" className="text-xl dark:text-white" />
               </div>
               <div className="min-w-0 flex-1">
                 <span className="block truncate text-base font-semibold text-gray-900 dark:text-white">
@@ -557,7 +551,10 @@ const SessionsCard: FC = function () {
           <li className="py-4">
             <div className="flex items-center space-x-4">
               <div className="shrink-0">
-                <HiDesktopComputer className="text-2xl dark:text-white" />
+                <Icon
+                  name="HiDesktopComputer"
+                  className="text-2xl dark:text-white"
+                />
               </div>
               <div className="min-w-0 flex-1">
                 <p className="truncate text-base font-semibold text-gray-900 dark:text-white">
@@ -575,7 +572,10 @@ const SessionsCard: FC = function () {
           <li className="pb-6 pt-4">
             <div className="flex items-center space-x-4">
               <div className="shrink-0">
-                <HiDeviceMobile className="text-2xl dark:text-white" />
+                <Icon
+                  name="HiDeviceMobile"
+                  className="text-2xl dark:text-white"
+                />
               </div>
               <div className="min-w-0 flex-1">
                 <p className="truncate text-base font-semibold text-gray-900 dark:text-white">

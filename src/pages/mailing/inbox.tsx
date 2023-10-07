@@ -1,18 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Checkbox, Label, Progress, Table } from "flowbite-react";
 import type { FC } from "react";
-import {
-  HiChevronLeft,
-  HiChevronRight,
-  HiDotsVertical,
-  HiExclamationCircle,
-  HiEye,
-  HiFolder,
-  HiPlus,
-  HiTrash,
-  HiViewGrid,
-} from "react-icons/hi";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
+import Icon from "../../icons";
 
 const MailingInboxPage: FC = function () {
   return (
@@ -40,28 +30,28 @@ const Menu: FC = function () {
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Delete</span>
-            <HiTrash className="text-2xl" />
+            <Icon name="HiTrash" className="text-2xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Move</span>
-            <HiFolder className="text-2xl" />
+            <Icon name="HiFolder" className="text-2xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Purge</span>
-            <HiExclamationCircle className="text-2xl" />
+            <Icon name="HiExclamationCircle" className="text-2xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Settings</span>
-            <HiDotsVertical className="text-2xl" />
+            <Icon name="HiDotsVertical" className="text-2xl" />
           </a>
         </div>
         <div className="pl-3">
@@ -69,7 +59,7 @@ const Menu: FC = function () {
             href="/mailing/compose"
             className="mr-3 inline-flex items-center gap-x-2 rounded-lg bg-primary-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
           >
-            <HiPlus className="text-lg" />
+            <Icon name="HiPlus" className="text-lg" />
             Compose
           </a>
         </div>
@@ -80,21 +70,21 @@ const Menu: FC = function () {
           className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
         >
           <span className="sr-only">Apps</span>
-          <HiViewGrid className="text-2xl" />
+          <Icon name="HiViewGrid" className="text-2xl" />
         </a>
         <a
           href="#"
           className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
         >
           <span className="sr-only">Previous</span>
-          <HiChevronLeft className="text-2xl" />
+          <Icon name="HiChevronLeft" className="text-2xl" />
         </a>
         <a
           href="#"
           className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
         >
           <span className="sr-only">Next</span>
-          <HiChevronRight className="text-2xl" />
+          <Icon name="HiChevronRight" className="text-2xl" />
         </a>
         <span className="font-normal text-gray-500 dark:text-gray-400 sm:text-xs md:text-sm">
           Show&nbsp;
@@ -1020,7 +1010,7 @@ const Footer: FC = function () {
       </div>
       <div className="hidden items-center gap-x-2 text-sm font-medium text-gray-500 dark:text-gray-400 sm:flex">
         Last account activity: 2 hours ago
-        <HiEye className="text-sm" />
+        <Icon name="HiEye" className="text-sm" />
       </div>
       <div className="mb-4 flex items-center sm:mb-0 sm:hidden">
         <a
@@ -1028,21 +1018,21 @@ const Footer: FC = function () {
           className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900"
         >
           <span className="sr-only">Apps</span>
-          <HiViewGrid className="text-2xl" />
+          <Icon name="HiViewGrid" className="text-2xl" />
         </a>
         <a
           href="#"
           className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900"
         >
           <span className="sr-only">Previous</span>
-          <HiChevronLeft className="text-2xl" />
+          <Icon name="HiChevronLeft" className="text-2xl" />
         </a>
         <a
           href="#"
           className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900"
         >
           <span className="sr-only">Next</span>
-          <HiChevronRight className="text-2xl" />
+          <Icon name="HiChevronRight" className="text-2xl" />
         </a>
         <span className="text-sm font-normal text-gray-500 dark:text-gray-400">
           Showing&nbsp;

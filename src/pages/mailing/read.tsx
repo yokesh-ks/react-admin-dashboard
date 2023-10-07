@@ -1,22 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button } from "flowbite-react";
 import type { FC } from "react";
-import { FaSmile } from "react-icons/fa";
-import {
-  HiArrowLeft,
-  HiArrowRight,
-  HiChevronLeft,
-  HiChevronRight,
-  HiClock,
-  HiExclamationCircle,
-  HiFolder,
-  HiOutlineTag,
-  HiPaperClip,
-  HiPhotograph,
-  HiPrinter,
-  HiReply,
-  HiTrash,
-} from "react-icons/hi";
+import Icon from "../../icons";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
 
 const MailingReadPage: FC = function () {
@@ -80,7 +65,7 @@ const Menu: FC = function () {
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Go back</span>
-            <HiArrowLeft className="text-2xl" />
+            <Icon name="HiArrowLeft" className="text-2xl" />
           </a>
         </div>
         <div className="flex space-x-2 pl-0 sm:px-2">
@@ -89,28 +74,28 @@ const Menu: FC = function () {
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Save for later</span>
-            <HiClock className="text-2xl" />
+            <Icon name="HiClock" className="text-2xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Purge</span>
-            <HiExclamationCircle className="text-2xl" />
+            <Icon name="HiExclamationCircle" className="text-2xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Move</span>
-            <HiFolder className="text-2xl" />
+            <Icon name="HiFolder" className="text-2xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Tag</span>
-            <HiOutlineTag className="text-2xl" />
+            <Icon name="HiOutlineTag" className="text-2xl" />
           </a>
         </div>
         <div className="pl-3 text-sm font-medium text-gray-500">
@@ -124,14 +109,14 @@ const Menu: FC = function () {
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Reply</span>
-            <HiReply className="text-2xl" />
+            <Icon name="HiReply" className="text-2xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Delete</span>
-            <HiTrash className="text-2xl" />
+            <Icon name="HiReply" className="text-2xl" />
           </a>
         </div>
         <div className="pl-2">
@@ -140,14 +125,14 @@ const Menu: FC = function () {
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Previous</span>
-            <HiChevronLeft className="text-3xl" />
+            <Icon name="HiChevronLeft" className="text-3xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Next</span>
-            <HiChevronRight className="text-3xl" />
+            <Icon name="HiChevronRight" className="text-3xl" />
           </a>
         </div>
       </div>
@@ -162,13 +147,13 @@ const Footer: FC = function () {
         <div className="mb-3 space-y-3 sm:mb-0 sm:flex sm:space-x-3 sm:space-y-0">
           <Button color="primary" href="/mailing/reply">
             <div className="flex items-center gap-x-2">
-              <HiReply className="text-xl" />
+              <Icon name="HiReply" className="text-xl" />
               Reply
             </div>
           </Button>
           <Button color="gray" href="#">
             <div className="flex items-center gap-x-2">
-              <HiArrowRight className="text-xl" />
+              <Icon name="HiArrowRight" className="text-xl" />
               Forward
             </div>
           </Button>
@@ -179,28 +164,28 @@ const Footer: FC = function () {
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Add emoji</span>
-            <FaSmile className="text-xl" />
+            <Icon name="FaSmile" className="text-xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Attach</span>
-            <HiPaperClip className="text-xl" />
+            <Icon name="HiPaperClip" className="text-xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Screenshot</span>
-            <HiPhotograph className="text-xl" />
+            <Icon name="HiPhotograph" className="text-xl" />
           </a>
           <a
             href="#"
             className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
           >
             <span className="sr-only">Print</span>
-            <HiPrinter className="text-xl" />
+            <Icon name="HiPrinter" className="text-xl" />
           </a>
         </div>
       </div>

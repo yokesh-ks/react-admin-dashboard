@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Card } from "flowbite-react";
 import type { FC } from "react";
-import { HiBriefcase, HiDotsVertical, HiHeart, HiMap } from "react-icons/hi";
-import { MdComment } from "react-icons/md";
+import Icon from "../../icons";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
 
 const UserFeedPage: FC = function () {
@@ -29,11 +28,11 @@ const UserProfile: FC = function () {
           <h2 className="text-xl font-bold dark:text-white">Jese Leos</h2>
           <ul className="mt-2 space-y-1">
             <li className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-              <HiBriefcase className="mr-2 text-lg text-gray-900" />
+              <Icon name="HiBriefcase" className="mr-2 text-lg text-gray-900" />
               Front-end Developer
             </li>
             <li className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-              <HiMap className="mr-2 text-lg text-gray-900" />
+              <Icon name="HiMap" className="mr-2 text-lg text-gray-900" />
               San Francisco, USA
             </li>
           </ul>
@@ -232,7 +231,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -258,13 +257,13 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />7 Comments
+              <Icon name="MdComment" className="mr-2 text-lg" />7 Comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               457 Likes
             </a>
           </div>
@@ -303,7 +302,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -317,14 +316,14 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />
+              <Icon name="MdComment" className="mr-2 text-lg" />
               No comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               43 Likes
             </a>
           </div>
@@ -363,7 +362,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -389,13 +388,13 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />7 Comments
+              <Icon name="MdComment" className="mr-2 text-lg" />7 Comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               457 Likes
             </a>
           </div>
@@ -434,7 +433,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -448,14 +447,14 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />
+              <Icon name="MdComment" className="mr-2 text-lg" />
               No comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               43 Likes
             </a>
           </div>
@@ -494,7 +493,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -520,13 +519,13 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />7 Comments
+              <Icon name="MdComment" className="mr-2 text-lg" />7 Comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               457 Likes
             </a>
           </div>
@@ -565,7 +564,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -579,14 +578,14 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />
+              <Icon name="MdComment" className="mr-2 text-lg" />
               No comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               43 Likes
             </a>
           </div>
@@ -625,7 +624,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -651,13 +650,13 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />7 Comments
+              <Icon name="MdComment" className="mr-2 text-lg" />7 Comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               457 Likes
             </a>
           </div>
@@ -696,7 +695,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -710,14 +709,14 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />
+              <Icon name="MdComment" className="mr-2 text-lg" />
               No comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               43 Likes
             </a>
           </div>
@@ -756,7 +755,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -782,13 +781,13 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />7 Comments
+              <Icon name="MdComment" className="mr-2 text-lg" />7 Comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               457 Likes
             </a>
           </div>
@@ -827,7 +826,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -841,14 +840,14 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />
+              <Icon name="MdComment" className="mr-2 text-lg" />
               No comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               43 Likes
             </a>
           </div>
@@ -887,7 +886,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -913,13 +912,13 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />7 Comments
+              <Icon name="MdComment" className="mr-2 text-lg" />7 Comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               457 Likes
             </a>
           </div>
@@ -958,7 +957,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -972,14 +971,14 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />
+              <Icon name="MdComment" className="mr-2 text-lg" />
               No comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               43 Likes
             </a>
           </div>
@@ -1018,7 +1017,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -1044,13 +1043,13 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />7 Comments
+              <Icon name="MdComment" className="mr-2 text-lg" />7 Comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               457 Likes
             </a>
           </div>
@@ -1089,7 +1088,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -1103,14 +1102,14 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />
+              <Icon name="MdComment" className="mr-2 text-lg" />
               No comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               43 Likes
             </a>
           </div>
@@ -1149,7 +1148,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -1175,13 +1174,13 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />7 Comments
+              <Icon name="MdComment" className="mr-2 text-lg" />7 Comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               457 Likes
             </a>
           </div>
@@ -1220,7 +1219,7 @@ const UserFeed: FC = function () {
               href="#"
               className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
             >
-              <HiDotsVertical className="text-2xl" />
+              <Icon name="HiDotsVertical" className="text-2xl" />
             </a>
           </div>
           <div className="space-y-4">
@@ -1234,14 +1233,14 @@ const UserFeed: FC = function () {
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <MdComment className="mr-2 text-lg" />
+              <Icon name="MdComment" className="mr-2 text-lg" />
               No comments
             </a>
             <a
               href="#"
               className="flex items-center text-sm font-medium text-gray-500 hover:text-gray-900 hover:underline dark:text-gray-400 dark:hover:text-white"
             >
-              <HiHeart className="mr-2 text-lg" />
+              <Icon name="HiHeart" className="mr-2 text-lg" />
               43 Likes
             </a>
           </div>

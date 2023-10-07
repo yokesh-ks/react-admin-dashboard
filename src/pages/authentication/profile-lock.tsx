@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button, Card, Checkbox, Label, TextInput } from "flowbite-react";
 import type { FC } from "react";
-import { HiLockOpen } from "react-icons/hi";
+import Icon from "../../icons";
 
 const ProfileLockPage: FC = function () {
   return (
@@ -47,7 +47,7 @@ const ProfileLockPage: FC = function () {
           </div>
           <div>
             <Button type="submit" className="w-full lg:w-auto">
-              <HiLockOpen className="mr-2 text-xl" />
+              <Icon name="HiLockOpen" className="mr-2 text-xl" />
               Unlock
             </Button>
           </div>

@@ -10,7 +10,7 @@ import {
   TextInput,
 } from "flowbite-react";
 import type { FC } from "react";
-import { HiHome } from "react-icons/hi";
+import Icon from "../../icons";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
 
 const EcommerceBillingPage: FC = function () {
@@ -21,7 +21,7 @@ const EcommerceBillingPage: FC = function () {
           <Breadcrumb className="mb-4">
             <Breadcrumb.Item href="#">
               <div className="flex items-center gap-x-3">
-                <HiHome className="text-xl" />
+                <Icon name="HiHome" className="text-xl" />
                 <span className="dark:text-white">Home</span>
               </div>
             </Breadcrumb.Item>

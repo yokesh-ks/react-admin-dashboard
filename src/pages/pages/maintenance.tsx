@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Button } from "flowbite-react";
 import type { FC } from "react";
-import { HiChevronLeft } from "react-icons/hi";
+import Icon from "../../icons";
 
 const MaintenancePage: FC = function () {
   return (
@@ -24,7 +24,7 @@ const MaintenancePage: FC = function () {
       </p>
       <Button href="/">
         <div className="mr-1 flex items-center gap-x-2">
-          <HiChevronLeft className="text-xl" /> Go back home
+          <Icon name="HiChevronLeft" className="text-xl" /> Go back home
         </div>
       </Button>
     </div>

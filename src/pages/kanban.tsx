@@ -6,16 +6,7 @@ import NavbarSidebarLayout from "../layouts/navbar-sidebar";
 import kanbanBoards from "../data/kanban.json";
 import { ReactSortable } from "react-sortablejs";
 import { Button, Label, Modal, Textarea, TextInput } from "flowbite-react";
-import {
-  HiArrowsExpand,
-  HiClipboard,
-  HiClipboardCopy,
-  HiEye,
-  HiFolder,
-  HiPaperClip,
-  HiPencilAlt,
-  HiPlus,
-} from "react-icons/hi";
+import Icon from "../icons";
 
 interface KanbanBoard {
   id: number;
@@ -104,7 +95,7 @@ const KanbanPage: FC = function () {
                                       className="h-7 w-7 rounded-full border-2 border-white dark:border-gray-800"
                                     />
                                   </a>
-                                  <div className="invisible absolute z-50 inline-block rounded-lg bg-gray-900 py-2 px-3 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
+                                  <div className="invisible absolute z-50 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700">
                                     {member.name}
                                   </div>
                                 </Fragment>
@@ -151,7 +142,7 @@ const EditCardModal: FC = function () {
         className="flex w-full items-center justify-center rounded-lg border-2 border-transparent py-2 font-semibold text-gray-500 hover:border-gray-300 hover:bg-gray-100 hover:text-gray-900 dark:border-gray-800 dark:hover:border-gray-700 dark:hover:bg-gray-800 dark:hover:text-white"
       >
         <span className="sr-only">Edit card</span>
-        <HiPencilAlt className="text-lg" />
+        <Icon name="HiPencilAlt" className="text-lg" />
       </button>
       <Modal onClose={() => setOpen(false)} show={isOpen}>
         <Modal.Header className="border-b border-gray-200 !p-6 dark:border-gray-700">
@@ -185,7 +176,7 @@ const EditCardModal: FC = function () {
                 <div
                   id="bonnie-tooltip"
                   role="tooltip"
-                  className="invisible absolute z-10 inline-block rounded-lg bg-gray-900 py-2 px-3 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300"
+                  className="invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300"
                 >
                   Bonnie Green
                 </div>
@@ -203,7 +194,7 @@ const EditCardModal: FC = function () {
                 <div
                   id="roberta-tooltip"
                   role="tooltip"
-                  className="invisible absolute z-10 inline-block rounded-lg bg-gray-900 py-2 px-3 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300"
+                  className="invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300"
                 >
                   Roberta Casas
                 </div>
@@ -221,7 +212,7 @@ const EditCardModal: FC = function () {
                 <div
                   id="michael-tooltip"
                   role="tooltip"
-                  className="invisible absolute z-10 inline-block rounded-lg bg-gray-900 py-2 px-3 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300"
+                  className="invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300"
                 >
                   Michael Gough
                 </div>
@@ -231,7 +222,7 @@ const EditCardModal: FC = function () {
                 className="ml-5 font-bold dark:bg-gray-600 [&>*]:py-1"
               >
                 <div className="flex items-center gap-x-2 text-xs">
-                  <HiPlus />
+                  <Icon name="HiPlus" />
                   Join
                 </div>
               </Button>
@@ -240,7 +231,7 @@ const EditCardModal: FC = function () {
                 className="ml-3 font-bold dark:bg-gray-600 [&>*]:py-1"
               >
                 <div className="flex items-center gap-x-2 text-xs">
-                  <HiPaperClip />
+                  <Icon name="HiPaperClip" />
                   Attachment
                 </div>
               </Button>
@@ -293,7 +284,7 @@ const EditCardModal: FC = function () {
             <div className="flex items-center justify-between border-t p-4 dark:border-gray-600">
               <button
                 type="button"
-                className="inline-flex items-center rounded-lg bg-primary-700 py-1.5 px-3 text-center text-xs font-semibold text-white hover:bg-primary-800"
+                className="inline-flex items-center rounded-lg bg-primary-700 px-3 py-1.5 text-center text-xs font-semibold text-white hover:bg-primary-800"
               >
                 <svg
                   className="mr-1 h-4 w-4"
@@ -396,31 +387,31 @@ const EditCardModal: FC = function () {
           <div className="grid w-full grid-cols-2 items-center gap-3 sm:grid-cols-5">
             <Button color="primary" onClick={() => setOpen(false)}>
               <div className="flex items-center gap-x-2">
-                <HiClipboard className="text-xl" />
+                <Icon name="HiClipboard" className="text-xl" />
                 Save
               </div>
             </Button>
             <Button color="gray" onClick={() => setOpen(false)}>
               <div className="flex items-center gap-x-2">
-                <HiArrowsExpand className="text-xl" />
+                <Icon name="HiArrowsExpand" className="text-xl" />
                 Move
               </div>
             </Button>
             <Button color="gray" onClick={() => setOpen(false)}>
               <div className="flex items-center gap-x-2">
-                <HiClipboardCopy className="text-xl" />
+                <Icon name="HiClipboardCopy" className="text-xl" />
                 Copy
               </div>
             </Button>
             <Button color="gray" onClick={() => setOpen(false)}>
               <div className="flex items-center gap-x-2">
-                <HiFolder className="text-xl" />
+                <Icon name="HiFolder" className="text-xl" />
                 Archive
               </div>
             </Button>
             <Button color="gray" onClick={() => setOpen(false)}>
               <div className="flex items-center gap-x-2">
-                <HiEye className="text-xl" />
+                <Icon name="HiEye" className="text-xl" />
                 Watch
               </div>
             </Button>
@@ -505,7 +496,7 @@ const AddAnotherCardModal: FC = function () {
           <div className="flex items-center gap-x-3">
             <Button color="primary" onClick={() => setOpen(false)}>
               <div className="flex items-center gap-x-2">
-                <HiPlus className="text-lg" />
+                <Icon name="HiPlus" className="text-lg" />
                 Add card
               </div>
             </Button>

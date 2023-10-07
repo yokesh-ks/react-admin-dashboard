@@ -1,6 +1,6 @@
 import { Badge, Breadcrumb, Progress } from "flowbite-react";
 import type { FC } from "react";
-import { HiBriefcase, HiHome, HiMap } from "react-icons/hi";
+import Icon from "../../icons";
 import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
 
 const UserProfilePage: FC = function () {
@@ -11,7 +11,7 @@ const UserProfilePage: FC = function () {
           <Breadcrumb className="mb-4">
             <Breadcrumb.Item href="#">
               <div className="flex items-center gap-x-3">
-                <HiHome className="text-xl" />
+                <Icon name="HiHome" className="text-xl" />
                 <span className="dark:text-white">Home</span>
               </div>
             </Breadcrumb.Item>
@@ -49,11 +49,17 @@ const ProfileIntro: FC = function () {
           <h2 className="text-xl font-bold dark:text-white">Jese Leos</h2>
           <ul className="mt-2 space-y-1">
             <li className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-              <HiBriefcase className="mr-2 text-lg text-gray-900 dark:text-gray-100" />
+              <Icon
+                name="HiBriefcase"
+                className="mr-2 text-lg text-gray-900 dark:text-gray-100"
+              />
               Front-end Developer
             </li>
             <li className="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
-              <HiMap className="mr-2 text-lg text-gray-900 dark:text-gray-100" />
+              <Icon
+                name="HiMap"
+                className="mr-2 text-lg text-gray-900 dark:text-gray-100"
+              />
               San Francisco, USA
             </li>
           </ul>
