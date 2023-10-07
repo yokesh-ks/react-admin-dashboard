@@ -1,6 +1,43 @@
 <div align="center">
   <h1>React Admin Dashboard</h1>
-  <p>Leverage a comprehensive set of pre-designed UI components and templates to accelerate web application and admin dashboard development. Begin with a top-tier admin dashboard layout meticulously crafted using React, Tailwind CSS, and Flowbite, showcasing various essential features such as charts, kanban boards, and mailing systems.</p>
 </div>
+
+## Introduction
+
+Welcome to the React Admin Dashboard repository! This project provides a collection of pre-designed UI components and templates aimed at accelerating the development of web applications and admin dashboards. Utilizing React, Tailwind CSS, and Flowbite, this admin dashboard layout showcases a variety of essential features like charts, kanban boards, and mailing systems
+
+## Project Features
+
+- Modern and intuitive UI components
+- Pre-designed admin dashboard layout
+- Integration with React, Tailwind CSS, and Flowbite
+- Icon integration using `react-icons`
+- Charts and graphs using `react-apexcharts`
+- Kanban-style boards using `react-sortablejs`
+- Maps integration using `svgmap`
+
+## Commands
+
+| Command       | Action                                                                     |
+| :------------ | :------------------------------------------------------------------------- |
+| `yarn`        | Install dependencies                                                       |
+| `yarn dev`    | Start local dev server at `localhost:3000`                                 |
+| `yarn build`  | Build your production site to `./dist/`                                    |
+| `yarn commit` | Create a new Git commit with standardized commit messages using commitizen |
+
+## Project Tree
+
+```
+📦 react-admin
+├─ public
+└─ src
+   ├─ components
+   ├─ context
+   ├─ data
+   ├─ helpers
+   ├─ layouts
+   ├─ navigation
+   └─ pages
+```
 
 
