@@ -37,7 +37,7 @@ const MailingReplyPage: FC = function () {
               Bonnie Green
             </div>
             <div className="text-sm text-gray-500 dark:text-gray-400">
-              email@flowbite.com
+              email@tempr.email
             </div>
           </div>
         </div>
@@ -166,7 +166,7 @@ const SendForm: FC = function () {
           <TextInput
             id="reply-to"
             name="reply-to"
-            defaultValue="email@flowbite.com"
+            defaultValue="email@tempr.email"
           />
         </div>
         <div>

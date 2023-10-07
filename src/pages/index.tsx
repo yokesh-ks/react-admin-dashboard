@@ -1351,7 +1351,7 @@ const LatestCustomers: FC = function () {
                   Neil Sims
                 </p>
                 <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                  email@flowbite.com
+                  email@tempr.email
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
@@ -1373,7 +1373,7 @@ const LatestCustomers: FC = function () {
                   Bonnie Green
                 </p>
                 <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                  email@flowbite.com
+                  email@tempr.email
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
@@ -1395,7 +1395,7 @@ const LatestCustomers: FC = function () {
                   Michael Gough
                 </p>
                 <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                  email@flowbite.com
+                  email@tempr.email
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
@@ -1417,7 +1417,7 @@ const LatestCustomers: FC = function () {
                   Thomes Lean
                 </p>
                 <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                  email@flowbite.com
+                  email@tempr.email
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">
@@ -1439,7 +1439,7 @@ const LatestCustomers: FC = function () {
                   Lana Byrd
                 </p>
                 <p className="truncate text-sm text-gray-500 dark:text-gray-400">
-                  email@flowbite.com
+                  email@tempr.email
                 </p>
               </div>
               <div className="inline-flex items-center text-base font-semibold text-gray-900 dark:text-white">

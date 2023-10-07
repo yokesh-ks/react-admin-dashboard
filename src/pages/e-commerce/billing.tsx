@@ -53,12 +53,12 @@ const IntroCard: FC = function () {
         className="flex items-center text-2xl font-bold dark:text-white"
       >
         <img alt="" src="../../images/logo.svg" className="mr-4 h-11" />
-        <span>Flowbite</span>
+        <span>React Admin</span>
       </a>
       <p className="text-base font-normal text-gray-500 dark:text-gray-400">
         Switch your subscription to a different type, such as a monthly plan,
         annual plan, or student plan. And see a list of subscription plans that
-        Flowbite offers.
+        React Admin offers.
       </p>
       <p className="text-sm font-semibold text-gray-900 dark:text-white">
         Next payment of $36 (yearly) occurs on August 13, 2020.

@@ -37,7 +37,7 @@ const MailingReadPage: FC = function () {
               Bonnie Green
             </div>
             <div className="text-sm text-gray-500 dark:text-gray-400">
-              email@flowbite.com
+              email@tempr.email
             </div>
           </div>
         </div>

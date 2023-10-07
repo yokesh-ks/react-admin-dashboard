@@ -171,7 +171,6 @@ const ExampleSidebar: FC = function () {
                   </Sidebar.Item>
                 </Sidebar.Collapse>
                 <Sidebar.Collapse icon={HiChartSquareBar} label="Pages">
-                  <Sidebar.Item href="/pages/pricing">Pricing</Sidebar.Item>
                   <Sidebar.Item href="/pages/maintenance">
                     Maintenace
                   </Sidebar.Item>

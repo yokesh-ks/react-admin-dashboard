@@ -45,9 +45,9 @@ const UserProfile: FC = function () {
             <div className="mt-4">Email address</div>
             <a
               className="text-sm font-medium text-gray-900 dark:text-white"
-              href="mailto:webmaster@flowbite.com"
+              href="mailto:webmaster@tempr.email"
             >
-              yourname@flowbite.com
+              yourname@tempr.email
             </a>
             <div className="mt-4">Home address</div>
             <div className="mb-2 text-sm font-medium text-gray-900 dark:text-white">

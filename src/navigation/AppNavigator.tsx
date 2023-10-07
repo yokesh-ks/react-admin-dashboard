@@ -18,7 +18,6 @@ import MailingReplyPage from "../pages/mailing/reply";
 import NotFoundPage from "../pages/pages/404";
 import ServerErrorPage from "../pages/pages/500";
 import MaintenancePage from "../pages/pages/maintenance";
-import PricingPage from "../pages/pages/pricing";
 import UserFeedPage from "../pages/users/feed";
 import UserListPage from "../pages/users/list";
 import UserProfilePage from "../pages/users/profile";
@@ -36,7 +35,6 @@ const AppNavigator: FC = function () {
           <Route path="/mailing/read" element={<MailingReadPage />} />
           <Route path="/mailing/reply" element={<MailingReplyPage />} />
           <Route path="/kanban" element={<KanbanPage />} />
-          <Route path="/pages/pricing" element={<PricingPage />} />
           <Route path="/pages/maintenance" element={<MaintenancePage />} />
           <Route path="/pages/404" element={<NotFoundPage />} />
           <Route path="/pages/500" element={<ServerErrorPage />} />
