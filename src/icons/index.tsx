@@ -1,5 +1,5 @@
-import React from "react";
-import type { IconType } from "react-icons";
+import React from 'react'
+import type { IconType } from 'react-icons'
 import {
   HiBriefcase,
   HiChevronLeft,
@@ -39,7 +39,7 @@ import {
   HiEye,
   HiPencilAlt,
   HiPlus,
-} from "react-icons/hi";
+} from 'react-icons/hi'
 import {
   FaDribbble,
   FaFacebookF,
@@ -47,18 +47,18 @@ import {
   FaSmile,
   FaTwitter,
   FaPlus,
-} from "react-icons/fa";
-import { MdComment } from "react-icons/md";
-import ProfileIcon from "./src/profile";
+} from 'react-icons/fa'
+import { MdComment } from 'react-icons/md'
+import ProfileIcon from './src/profile'
 
 interface IconProps {
-  name: string;
-  className?: string;
+  name: string
+  className?: string
   // Add any other props you expect to receive
 }
 
 interface IconComponents {
-  [key: string]: IconType;
+  [key: string]: IconType
 }
 
 const iconComponents: IconComponents = {
@@ -108,20 +108,20 @@ const iconComponents: IconComponents = {
   ProfileIcon,
   MdComment,
   HiArrowRight,
-};
+}
 
 const Icon: React.FC<IconProps> = ({ name, ...props }) => {
-  const IconComponent = iconComponents[name];
+  const IconComponent = iconComponents[name]
 
   if (IconComponent) {
     return (
-      <div className="flex justify-center">
+      <div className='flex justify-center'>
         <IconComponent {...props} />
       </div>
-    );
+    )
   }
 
-  return null;
-};
+  return null
+}
 
-export default Icon;
+export default Icon

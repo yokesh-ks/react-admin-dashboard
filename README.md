@@ -41,5 +41,3 @@ Welcome to the React Admin Dashboard repository! This project provides a collect
    ├─ navigation
    └─ pages
 ```
-
-

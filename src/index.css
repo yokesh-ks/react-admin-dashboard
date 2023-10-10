@@ -105,7 +105,7 @@
   @apply dark:stroke-gray-800 !important;
 }
 
-.svgMap-country[fill="#4B5563"] {
+.svgMap-country[fill='#4B5563'] {
   @apply fill-[#4B5563] !important;
 }
 

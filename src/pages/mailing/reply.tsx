@@ -1,40 +1,40 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Button, Label, Textarea, TextInput } from "flowbite-react";
-import type { FC } from "react";
-import NavbarSidebarLayout from "../../layouts/navbar-sidebar";
-import Icon from "../../icons";
+import { Button, Label, Textarea, TextInput } from 'flowbite-react'
+import type { FC } from 'react'
+import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
+import Icon from '../../icons'
 
 const MailingReplyPage: FC = function () {
   return (
     <NavbarSidebarLayout isFooter={false}>
       <Menu />
-      <div className="p-5">
-        <div className="mb-4 flex items-center">
-          <div className="shrink-0">
+      <div className='p-5'>
+        <div className='mb-4 flex items-center'>
+          <div className='shrink-0'>
             <img
-              alt=""
-              src="../../images/users/bonnie-green.png"
-              className="h-8 w-8 rounded-full"
+              alt=''
+              src='../../images/users/bonnie-green.png'
+              className='h-8 w-8 rounded-full'
             />
           </div>
-          <div className="ml-4">
-            <div className="truncate text-base font-semibold text-gray-900 dark:text-white">
+          <div className='ml-4'>
+            <div className='truncate text-base font-semibold text-gray-900 dark:text-white'>
               Bonnie Green
             </div>
-            <div className="text-sm text-gray-500 dark:text-gray-400">
+            <div className='text-sm text-gray-500 dark:text-gray-400'>
               email@tempr.email
             </div>
           </div>
         </div>
-        <h1 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
+        <h1 className='mb-4 text-2xl font-bold text-gray-900 dark:text-white'>
           Website Hosting Reviews Free The Best Resource For Hosting Comparison
         </h1>
-        <div className="space-y-2">
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+        <div className='space-y-2'>
+          <p className='text-base font-normal text-gray-500 dark:text-gray-400'>
             Do you know what could beat the exciting feeling of having a new
             computer? Make your own PC easy and compatible!
           </p>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+          <p className='text-base font-normal text-gray-500 dark:text-gray-400'>
             So insisted received is occasion advanced honoured. Among ready to
             which up. Attacks smiling and may out assured moments man nothing
             outward. Thrown any behind afford either the set depend one temper.
@@ -43,7 +43,7 @@ const MailingReplyPage: FC = function () {
             Merry their far had widen was. Concerns no in expenses raillery
             formerly.
           </p>
-          <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+          <p className='text-base font-normal text-gray-500 dark:text-gray-400'>
             Best Regards,
             <br />
             Bonnie Green, CEO Themesberg LLC
@@ -52,162 +52,162 @@ const MailingReplyPage: FC = function () {
       </div>
       <SendForm />
     </NavbarSidebarLayout>
-  );
-};
+  )
+}
 
 const Menu: FC = function () {
   return (
-    <div className="block items-center justify-between border-b border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:flex">
-      <div className="flex items-center divide-x divide-gray-100 dark:divide-gray-700">
-        <div className="pr-3">
+    <div className='block items-center justify-between border-b border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 sm:flex'>
+      <div className='flex items-center divide-x divide-gray-100 dark:divide-gray-700'>
+        <div className='pr-3'>
           <a
-            href="/mailing/inbox"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='/mailing/inbox'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Return</span>
-            <Icon name="HiArrowLeft" className="text-2xl" />
+            <span className='sr-only'>Return</span>
+            <Icon name='HiArrowLeft' className='text-2xl' />
           </a>
         </div>
-        <div className="flex space-x-2 pl-0 sm:px-2">
+        <div className='flex space-x-2 pl-0 sm:px-2'>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Save</span>
-            <Icon name="HiClock" className="text-2xl" />
+            <span className='sr-only'>Save</span>
+            <Icon name='HiClock' className='text-2xl' />
           </a>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Purge</span>
-            <Icon name="HiExclamationCircle" className="text-2xl" />
+            <span className='sr-only'>Purge</span>
+            <Icon name='HiExclamationCircle' className='text-2xl' />
           </a>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Move</span>
-            <Icon name="HiFolder" className="text-2xl" />
+            <span className='sr-only'>Move</span>
+            <Icon name='HiFolder' className='text-2xl' />
           </a>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Tag</span>
-            <Icon name="HiOutlineTag" className="text-2xl" />
+            <span className='sr-only'>Tag</span>
+            <Icon name='HiOutlineTag' className='text-2xl' />
           </a>
         </div>
-        <div className="pl-3 text-sm font-medium text-gray-500">
+        <div className='pl-3 text-sm font-medium text-gray-500'>
           Today, 08:34 AM
         </div>
       </div>
-      <div className="hidden space-x-2 divide-x divide-gray-100 pl-0 dark:divide-gray-700 sm:flex sm:px-2">
-        <div className="pr-2">
+      <div className='hidden space-x-2 divide-x divide-gray-100 pl-0 dark:divide-gray-700 sm:flex sm:px-2'>
+        <div className='pr-2'>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Reply</span>
-            <Icon name="HiReply" className="text-2xl" />
+            <span className='sr-only'>Reply</span>
+            <Icon name='HiReply' className='text-2xl' />
           </a>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Delete</span>
-            <Icon name="HiTrash" className="text-2xl" />
+            <span className='sr-only'>Delete</span>
+            <Icon name='HiTrash' className='text-2xl' />
           </a>
         </div>
-        <div className="pl-2">
+        <div className='pl-2'>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Previous</span>
-            <Icon name="HiChevronLeft" className="text-2xl" />
+            <span className='sr-only'>Previous</span>
+            <Icon name='HiChevronLeft' className='text-2xl' />
           </a>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Next</span>
-            <Icon name="HiChevronRight" className="text-2xl" />
+            <span className='sr-only'>Next</span>
+            <Icon name='HiChevronRight' className='text-2xl' />
           </a>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 const SendForm: FC = function () {
   return (
-    <div className="bottom-0 right-0 w-full border-t border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 lg:fixed lg:pl-64">
-      <form className="pb-4 sm:px-4">
-        <div className="mb-4">
-          <Label htmlFor="reply-to" className="sr-only">
+    <div className='bottom-0 right-0 w-full border-t border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800 lg:fixed lg:pl-64'>
+      <form className='pb-4 sm:px-4'>
+        <div className='mb-4'>
+          <Label htmlFor='reply-to' className='sr-only'>
             Reply to
           </Label>
           <TextInput
-            id="reply-to"
-            name="reply-to"
-            defaultValue="email@tempr.email"
+            id='reply-to'
+            name='reply-to'
+            defaultValue='email@tempr.email'
           />
         </div>
         <div>
-          <Label htmlFor="reply-message" className="sr-only">
+          <Label htmlFor='reply-message' className='sr-only'>
             Message
           </Label>
           <Textarea
-            id="reply-message"
-            name="reply-message"
+            id='reply-message'
+            name='reply-message'
             rows={6}
-            placeholder="Write text here ..."
+            placeholder='Write text here ...'
           />
         </div>
       </form>
-      <div className="items-center dark:divide-gray-700 sm:flex sm:divide-x sm:divide-gray-100 lg:pl-4">
-        <div className="mb-3 space-y-3 sm:mb-0 sm:flex sm:space-x-3 sm:space-y-0">
-          <Button color="primary" href="/mailing/reply">
-            <div className="flex items-center gap-x-2">
-              <Icon name="HiPaperAirplane" className="text-xl" />
+      <div className='items-center dark:divide-gray-700 sm:flex sm:divide-x sm:divide-gray-100 lg:pl-4'>
+        <div className='mb-3 space-y-3 sm:mb-0 sm:flex sm:space-x-3 sm:space-y-0'>
+          <Button color='primary' href='/mailing/reply'>
+            <div className='flex items-center gap-x-2'>
+              <Icon name='HiPaperAirplane' className='text-xl' />
               Send
             </div>
           </Button>
         </div>
-        <div className="flex space-x-1 pl-0 sm:pl-6">
+        <div className='flex space-x-1 pl-0 sm:pl-6'>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Add emoji</span>
-            <Icon name="FaSmile" className="text-xl" />
+            <span className='sr-only'>Add emoji</span>
+            <Icon name='FaSmile' className='text-xl' />
           </a>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Attach</span>
-            <Icon name="HiPaperClip" className="text-xl" />
+            <span className='sr-only'>Attach</span>
+            <Icon name='HiPaperClip' className='text-xl' />
           </a>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Screenshot</span>
-            <Icon name="HiPhotograph" className="text-xl" />
+            <span className='sr-only'>Screenshot</span>
+            <Icon name='HiPhotograph' className='text-xl' />
           </a>
           <a
-            href="#"
-            className="inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+            href='#'
+            className='inline-flex cursor-pointer justify-center rounded p-1 text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white'
           >
-            <span className="sr-only">Print</span>
-            <Icon name="HiPrinter" className="text-xl" />
+            <span className='sr-only'>Print</span>
+            <Icon name='HiPrinter' className='text-xl' />
           </a>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default MailingReplyPage;
+export default MailingReplyPage
