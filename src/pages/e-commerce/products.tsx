@@ -6,14 +6,15 @@ import {
   Label,
   Modal,
   Table,
-  Textarea,
   TextInput,
+  Textarea,
 } from 'flowbite-react'
 import type { FC } from 'react'
 import { useState } from 'react'
+
+import Icon from '../../icons'
 import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
 import { Pagination } from '../users/list'
-import Icon from '../../icons'
 
 const EcommerceProductsPage: FC = function () {
   return (

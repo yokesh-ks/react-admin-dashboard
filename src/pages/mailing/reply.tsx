@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Button, Label, Textarea, TextInput } from 'flowbite-react'
+import { Button, Label, TextInput, Textarea } from 'flowbite-react'
 import type { FC } from 'react'
-import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
+
 import Icon from '../../icons'
+import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
 
 const MailingReplyPage: FC = function () {
   return (

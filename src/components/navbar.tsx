@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import type { FC } from 'react'
 import { DarkThemeToggle, Dropdown, Navbar } from 'flowbite-react'
+import type { FC } from 'react'
+
 import { useSidebarContext } from '../context/SidebarContext'
 import isSmallScreen from '../helpers/is-small-screen'
 import Icon from '../icons'

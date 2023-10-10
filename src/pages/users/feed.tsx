@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Card } from 'flowbite-react'
 import type { FC } from 'react'
+
 import Icon from '../../icons'
 import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
 

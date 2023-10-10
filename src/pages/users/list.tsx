@@ -10,6 +10,7 @@ import {
 } from 'flowbite-react'
 import type { FC } from 'react'
 import { useState } from 'react'
+
 import Icon from '../../icons'
 import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
 

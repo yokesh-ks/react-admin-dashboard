@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { Button, Label, Modal, TextInput, Textarea } from 'flowbite-react'
 import type { FC } from 'react'
 import { Fragment } from 'react'
 import { useState } from 'react'
-import NavbarSidebarLayout from '../layouts/navbar-sidebar'
-import kanbanBoards from '../data/kanban.json'
 import { ReactSortable } from 'react-sortablejs'
-import { Button, Label, Modal, Textarea, TextInput } from 'flowbite-react'
+
+import kanbanBoards from '../data/kanban.json'
 import Icon from '../icons'
+import NavbarSidebarLayout from '../layouts/navbar-sidebar'
 
 interface KanbanBoard {
   id: number

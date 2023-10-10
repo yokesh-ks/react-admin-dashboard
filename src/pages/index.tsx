@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Chart from 'react-apexcharts'
 import svgMap from 'svgmap'
 import 'svgmap/dist/svgMap.min.css'
+
 import NavbarSidebarLayout from '../layouts/navbar-sidebar'
 
 const DashboardPage: FC = function () {

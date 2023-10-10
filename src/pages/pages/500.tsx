@@ -1,5 +1,6 @@
 import { Button } from 'flowbite-react'
 import type { FC } from 'react'
+
 import Icon from '../../icons'
 
 const ServerErrorPage: FC = function () {

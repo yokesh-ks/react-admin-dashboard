@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Breadcrumb, Label, Table, TextInput } from 'flowbite-react'
 import type { FC } from 'react'
-import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
+
 import Icon from '../../icons'
+import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
 
 const EcommerceInvoicePage: FC = function () {
   return (

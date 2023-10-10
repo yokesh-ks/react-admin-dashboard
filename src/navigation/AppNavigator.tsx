@@ -1,6 +1,8 @@
 import type { FC } from 'react'
-import { Routes, Route } from 'react-router'
+import { Route, Routes } from 'react-router'
 import { BrowserRouter } from 'react-router-dom'
+
+import FlowbiteWrapper from '../components/flowbite-wrapper'
 import DashboardPage from '../pages'
 import ForgotPasswordPage from '../pages/authentication/forgot-password'
 import ProfileLockPage from '../pages/authentication/profile-lock'
@@ -22,7 +24,6 @@ import UserFeedPage from '../pages/users/feed'
 import UserListPage from '../pages/users/list'
 import UserProfilePage from '../pages/users/profile'
 import UserSettingsPage from '../pages/users/settings'
-import FlowbiteWrapper from '../components/flowbite-wrapper'
 
 const AppNavigator: FC = function () {
   return (

@@ -1,8 +1,9 @@
+import classNames from 'classnames'
 import type { FC, PropsWithChildren } from 'react'
+
 import Navbar from '../components/navbar'
 import Sidebar from '../components/sidebar'
 import { SidebarProvider, useSidebarContext } from '../context/SidebarContext'
-import classNames from 'classnames'
 
 interface NavbarSidebarLayoutProps {
   isFooter?: boolean

@@ -6,10 +6,11 @@ import {
   Card,
   Label,
   Table,
-  Textarea,
   TextInput,
+  Textarea,
 } from 'flowbite-react'
 import type { FC } from 'react'
+
 import Icon from '../../icons'
 import NavbarSidebarLayout from '../../layouts/navbar-sidebar'
 
